@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    </head>
+    <body>
+       <div>
+      <input id="a" id="a" type="text"/>
+      <input id="b" type="text"/>
+      <input type="button" onclick="sum()" value="sum"/>
+      <input type="button" onclick="rest()" value="rest"/>
+      <input type="button" onclick="multiply()" value="multiply"/>
+      <input type="button" onclick="divide()" value="divide"/>
+    </div>
+    
+    <script>
+      var a,b, result;
+      function setValues() {
+        a = Number(document.getElementById("a").value);
+      b = Number(document.getElementById("b").value);
+
+      }
+    
+    function sum() {
+      setValues();
+      result = a+b;
+      alert("The sum is"+result);
+    }
+
+    function rest() {
+      setValues();
+      result = a-b;
+      alert("The rest is"+result);
+    }
+    function multiply() {
+      setValues();
+      result = a*b;
+      alert("The multiplication is"+result);
+    }
+    function divide() {
+      setValues();
+      result = a/b;
+      alert("The division is"+result);
+    }
+
+    </script>
+    
+    </body>
+</html>
